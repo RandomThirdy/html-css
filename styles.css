@@ -1,10 +1,11 @@
 p {
   font-family: Roboto, Arial;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .thumbnail {
-  width: 300px;
-  height: 200px;
+  width: 100%;
   display: block;
 }
 .search-bar {
@@ -14,20 +15,15 @@ p {
 
 .video-preview{
   display: inline-block;
-  width: 300px;
   vertical-align: top;
   margin-right: 15px;
 }
 
-.profile-picture{
-  display: inline-block;
-  width: 50px;
-  vertical-align: top;
+.profile-row{
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
-.video-info{
-  display: inline-block;
-  width: 200px;
-}
+
 .picture {
   width: 40px;
   border-radius: 25px;
@@ -37,11 +33,21 @@ p {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  margin-bottom: 12px;
 }
 .thumbnail-row {
   margin-bottom: 12px;
 }
-.video-author {
+.video-author, .video-stats {
   font-size: 12px;
   color: rgb(96, 96, 96);
+}
+.video-author {
+  margin-bottom: 4px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 55px;
+  column-gap: 12px;
 }
